@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::get('/stanze', 'ControllerStanza@index') -> name('stanze-index');
 Route::get('/stanze/show/{id}', 'ControllerStanza@show') -> name('stanze-show');
 Route::get('/stanze/create', 'ControllerStanza@create') -> name('stanze-create');
+Route::post('/stanze/create', 'ControllerStanza@store') -> name('stanze-store');
