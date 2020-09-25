@@ -1,0 +1,36 @@
+//
+$base-color: #636b6f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+html, body {
+    background-color: #fff;
+    color: $base-color;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+
+a {
+    color: $base-color;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
