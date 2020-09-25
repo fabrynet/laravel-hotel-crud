@@ -15,4 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+}) -> name('home');
+Route::get('/stanze', 'ControllerStanza@index') -> name('stanze-index');
+Route::get('/stanze/show/{id}', 'ControllerStanza@show') -> name('stanze-show');
+Route::get('/stanze/create', 'ControllerStanza@create') -> name('stanze-create');
