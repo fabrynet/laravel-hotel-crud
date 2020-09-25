@@ -7,10 +7,13 @@
 body {
   width: 100vw;
   height: 100vh;
+}
+
+main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 html,
@@ -21,6 +24,12 @@ body {
   font-weight: 200;
 }
 
+h1,
+h2,
+h3 {
+  margin: 15px 0;
+}
+
 a {
   color: #636b6f;
   padding: 0 25px;
@@ -29,5 +38,9 @@ a {
   letter-spacing: 0.1rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
 }
 

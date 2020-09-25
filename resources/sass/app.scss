@@ -11,11 +11,13 @@ body {
 
   width: 100vw;
   height: 100vh;
+}
 
+main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 html, body {
@@ -23,6 +25,10 @@ html, body {
     color: $base-color;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
+}
+
+h1, h2, h3 {
+  margin: 15px 0;
 }
 
 a {
@@ -33,4 +39,8 @@ a {
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
 }
