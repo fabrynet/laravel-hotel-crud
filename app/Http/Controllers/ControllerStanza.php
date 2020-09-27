@@ -9,6 +9,7 @@ class ControllerStanza extends Controller
 {
     public function index() {
       $stanze = Stanza::all();
+      // :: (Scope Resolution Operator): accesso al metodo STATICO all() senza istanziare la classe Stanza
       return view('stanze.index', compact('stanze'));
     }
     public function show($id) {
