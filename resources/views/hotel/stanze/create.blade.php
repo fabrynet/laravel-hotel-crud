@@ -3,11 +3,11 @@
 @section('content')
   <h1>NUOVA STANZA</h1>
     <h2>
-      <a href="{{ route ('stanze-index')}}">
+      <a href="{{ route ('hotel.stanze.index')}}">
         Index Stanze
       </a>
     </h2>
-    <form action="{{ route('stanze-store') }}" method="post">
+    <form action="{{ route('hotel.stanza.store') }}" method="post">
         @csrf
         @method('POST')
         <div class="form-group">

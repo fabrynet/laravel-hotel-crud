@@ -1,12 +1,17 @@
 @extends('layouts.main-layout')
 
 @section('content')
+
+  <h2>
+    <a href="{{ route('hotel.index') }}">INDEX HOTEL</a>
+  </h2>
+
   <h2>STANZE</h2>
 
-  <a href="{{ route('stanze-create') }}">
+  <a href="{{ route('hotel.stanza.create') }}">
     NUOVA STANZA
   </a>
-   
+
   <h3>Primo Piano</h3>
   @foreach ($stanze as $stanza)
     @if ($stanza -> floor == 1)

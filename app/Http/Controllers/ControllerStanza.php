@@ -10,14 +10,14 @@ class ControllerStanza extends Controller
     public function index() {
       $stanze = Stanza::all();
       // :: (Scope Resolution Operator): accesso al metodo STATICO all() senza istanziare la classe Stanza
-      return view('stanze.index', compact('stanze'));
+      return view('hotel.stanze.index', compact('stanze'));
     }
     public function show($id) {
       $stanza = Stanza::findOrFail($id);
-      return view('stanze.show', compact('stanza'));
+      return view('hotel.stanze.show', compact('stanza'));
     }
     public function create() {
-      return view('stanze.create');
+      return view('hotel.stanze.create');
     }
     public function store(Request $request) {
 

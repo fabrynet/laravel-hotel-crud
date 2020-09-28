@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 
 @section('content')
-  <a href="{{ route('stanze-index') }}">
+  <a href="{{ route('hotel.stanze.index') }}">
     Index Stanze
   </a>
   <h2>STANZA {{ $stanza -> room_number }}</h2>

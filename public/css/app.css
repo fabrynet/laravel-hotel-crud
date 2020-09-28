@@ -44,3 +44,17 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+li > form {
+  display: inline-block;
+}
+
+li > form button {
+  background-color: transparent;
+  border: none;
+  color: red;
+}
+

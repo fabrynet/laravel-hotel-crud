@@ -16,7 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 }) -> name('home');
-Route::get('/stanze', 'ControllerStanza@index') -> name('stanze-index');
-Route::get('/stanze/show/{id}', 'ControllerStanza@show') -> name('stanze-show');
-Route::get('/stanze/create', 'ControllerStanza@create') -> name('stanze-create');
-Route::post('/stanze/create', 'ControllerStanza@store') -> name('stanze-store');
+
+// hotel
+Route::get('/hotel', function(){
+  return view('hotel.index');
+}) -> name('hotel.index');
+
+// STANZE
+Route::get('/hotel/stanze', 'ControllerStanza@index') -> name('hotel.stanze.index');
+Route::get('/hotel/stanza/show/{id}', 'ControllerStanza@show') -> name('hotel.stanza.show');
+Route::get('/hotel/stanza/create', 'ControllerStanza@create') -> name('hotel.stanza.create');
+Route::post('/hotel/stanza/create', 'ControllerStanza@store') -> name('hotel.stanza.store');
+
+// PAGAMENTI
+Route::resource('pagamenti', PagamentoController::class);
